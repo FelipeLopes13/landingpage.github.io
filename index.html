@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="perfil.css">
+</head>
+<body>
+
+    <header>
+        <div class="header_conteudo">
+        <h1>Felipe Lopes</h1>
+        <p>Web Designer</p>
+
+        </div>
+    </header>
+
+    <section id="carrossel">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="imagem1.png" alt="Primeiro Slide" style="width: 5%;">
+                <div class="carousel-caption d-none d-md-block" style="color: black;">
+                    <h5>Imagem 1</h5>
+                     <p>"Calculadora Funcional"</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="imagem3.png" alt="Segundo Slide" style="width: 5%;">
+                <div class="carousel-caption d-none d-md-block" style="color: black;">
+                    <h5>Imagem 2</h5>
+                     <p>"Lâmpadas Interativas"</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="imagem4.png" alt="Terceiro Slide" style="width: 5%;">
+                <div class="carousel-caption d-none d-md-block" style="color: black;">
+                    <h5>Imagem 3</h5>
+                     <p>"Site Flexível"</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="imagem2.png" alt="Terceiro Slide" style="width: 5%;">
+                <div class="carousel-caption d-none d-md-block" style="color: black;">
+                    <h5>Imagem 4</h5>
+                     <p>"Hora do dia"</p>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Próximo</span>
+            </a>
+          </div>
+        <!--Imagens Carrosel-->
+    </section>
+
+    <section id="intro">
+        <!--Breve Introdução-->
+        <div class="intro_conteudo">
+            <p>Estudante de Desenvolmimento de Sistemas/ Profissional em Desenvolmimento de Websites.</p>
+        </div>
+    </section>
+
+    <section id="projetos">
+        <!--Adicionar os Projetos-->
+        <div class="conteudo">
+            <h2>Projeto 1</h2>
+            <p>Uma calculadora funcional feita a partir de JavaScript.</p>
+            <h2>Projeto 2</h2>
+            <p>Lâmpadas que acendem a partir de um comando dado pelo usuário.</p>
+            <h2>Projeto 3</h2>
+            <p>Site totalmente adaptável a qualquer tipo de plataforma.</p>
+            <h2>Projeto 4</h2>
+            <p>Um site em que identifica as horas do seu usuário.</p>
+
+        </div>
+    </section>
+
+    <section id="habilidades">
+        <!--Adicione habilidades aqui-->
+        <div class="conteudo">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Proativo.</li>
+                <li>Flexível.</li>
+                <li>Proeficiência em WebDesign.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id=" contato">
+        <!--Formulário de Contato-->
+        <div class="conteudo">
+            <h2>Contato</h2>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSchOQIs-dp8QNx_yFT4F9depjLfBVp14vnIW1FqNlS8EgqrNw/viewform?embedded=true" width="640" height="686" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+        </div>
+    </section>
+
+    <sectio id="calculo_proj">
+        <!--Cálculo de Projetos-->
+        <div class="conteudo">
+            <h2>Faça um Orçamento do seu Projeto aqui</h2>
+           <div class="calculo">
+                <label for="tipoprojeto">Tipo de Projetos:</label>
+                    <select name="tipoprojeto" id="tipoprojeto">
+                     <option value="Website">Website</option>
+                     <option value="LandingPage">Landingpage</option>
+                     <option value="WebApp">Aplicação web</option>
+                    </select>
+              <!------------------------------------------------------->
+                     <label for="horasprojeto">Horas Estimadas:</label>
+                        <input type="number" id="horasprojeto" placeholder="horas">
+                           <button onclick="calcularprojeto()">Calcular Preço do Projeto</button>
+                        <p id="preco">Preço do Projeto: R$0,00</p>
+
+           </div>
+
+        </div>
+    </section>
+
+    <footer>
+        &copy; Felipe Lopes
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="perfil.js"></script>
+
+    
+</body>
+</html>
